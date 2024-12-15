@@ -4,5 +4,4 @@ required_providers {
     version = "~> 3.6"
   }
 }
-
 provider "random" "this" {}
