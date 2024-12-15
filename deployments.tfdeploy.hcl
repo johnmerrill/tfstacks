@@ -6,6 +6,6 @@ deployment "dev" {
 orchestrate "auto_approve" "dev" {
   check {
     condition = context.plan.applyable == true
-    reason    = "Environment is development"
+    reason    = "auto apporve dev environment"
   }
 }

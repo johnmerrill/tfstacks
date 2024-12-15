@@ -5,3 +5,11 @@ component "random_id" {
     random = provider.random.this
   }
 }
+
+component "random_pet" {
+  source = "./modules/pet"
+
+  providers = {
+    random = provider.random.this
+  }
+}
