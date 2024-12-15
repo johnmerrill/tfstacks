@@ -4,7 +4,8 @@ output "petname" {
   type        = string
 }
 
-# output "unique_name_of_output" {
-#   description = "Description of the purpose of this output"
-#   value       = component.component_name.some_value
-# }
+output "id" {
+  description = "random id"
+  type        = string
+  value       = component.random_id.id
+}
