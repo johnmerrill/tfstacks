@@ -1,7 +1,7 @@
 deployment "dev" {
-  inputs = {
-    prefix = component.random_pet.name
-  }
+  # inputs = {
+  #   prefix = component.random_pet.name
+  # }
 }
 
 deployment "prod" {
