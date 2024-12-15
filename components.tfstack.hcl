@@ -6,7 +6,7 @@ component "random_id" {
   }
 
   inputs = {
-    prefix = var.prefix
+    prefix = component.random_pet.name
   }
 }
 

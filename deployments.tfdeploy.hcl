@@ -1,5 +1,6 @@
 deployment "dev" {
   # inputs = {
+  #   prefix = component.random_pet.name
   # }
 }
 
