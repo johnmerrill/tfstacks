@@ -3,6 +3,12 @@ deployment "dev" {
   # }
 }
 
+deployment "prod" {
+  inputs = {
+    prefix = "prod"
+  }
+}
+
 orchestrate "auto_approve" "dev" {
   check {
     condition = context.plan.applyable == true

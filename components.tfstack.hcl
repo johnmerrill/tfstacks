@@ -4,6 +4,10 @@ component "random_id" {
   providers = {
     random = provider.random.this
   }
+
+  inputs = {
+    prefix = var.prefix
+  }
 }
 
 component "random_pet" {
