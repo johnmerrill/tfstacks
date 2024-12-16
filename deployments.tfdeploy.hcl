@@ -1,6 +1,6 @@
 store "varset" "hcp" {
   id       = "varset-zbj89TPNiALdGJE9"
-  category = "env"
+  category = "terraform"
 }
 
 deployment "hcp-boundary" {
