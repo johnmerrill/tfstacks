@@ -11,9 +11,9 @@ deployment "boundary" {
   }
 }
 
-orchestrate "auto_approve" "boundary" {
-  check {
-    condition = context.plan.applyable == true
-    reason    = "auto apporve"
-  }
-}
+# orchestrate "auto_approve" "dev" {
+#   check {
+#     condition = context.plan.applyable == true && context.plan.deployment == "boundary"
+#     reason    = "auto apporve"
+#   }
+# }
