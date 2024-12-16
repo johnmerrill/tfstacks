@@ -18,15 +18,18 @@ variable "hcp_client_secret" {
 }
 
 variable "boundary_addr" {
-  type = string
+  default = ""
+  type    = string
 }
 
 variable "boundary_auth_method_login_name" {
+  default   = ""
   type      = string
   sensitive = true
 }
 
 variable "boundary_auth_method_password" {
+  default   = ""
   type      = string
   sensitive = true
 }
