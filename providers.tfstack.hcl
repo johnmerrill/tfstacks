@@ -10,5 +10,11 @@ required_providers {
   }
 }
 
-provider "hcp" "this" {}
+provider "hcp" "this" {
+  config {
+    client_id     = var.hcp_client_id
+    client_secret = var.hcp_client_secret
+  }
+}
+
 provider "random" "this" {}
