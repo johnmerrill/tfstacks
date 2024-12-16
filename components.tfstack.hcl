@@ -3,6 +3,7 @@ component "hcp_boundary" {
 
   providers = {
     hcp = provider.hcp.this
+    random = provider.random.this
   }
 
   inputs = {
