@@ -19,9 +19,9 @@ deployment "hcp-boundary" {
 
 deployment "boundary" {
   inputs = {
-    boundary_addr          = local.boundary_addr
-    auth_method_login_name = local.boundary_cluster_username
-    auth_method_password   = local.boundary_cluster_password
+    boundary_addr                   = local.boundary_addr
+    boundary_auth_method_login_name = local.boundary_cluster_username
+    boundary_auth_method_password   = local.boundary_cluster_password
   }
 }
 
