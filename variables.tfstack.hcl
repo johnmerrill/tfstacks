@@ -3,9 +3,13 @@ variable "hcp_project_id" {
 }
 
 variable "hcp_client_id" {
-  type = string
+  type      = string
+  sensitive = true
+  ephemeral = true
 }
 
 variable "hcp_client_secret" {
-  type = string
+  type      = string
+  sensitive = true
+  ephemeral = true
 }
