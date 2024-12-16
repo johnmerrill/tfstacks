@@ -1,15 +1,18 @@
 variable "hcp_project_id" {
-  type = string
+  type    = string
+  default = ""
 }
 
 variable "hcp_client_id" {
   type      = string
+  default   = ""
   sensitive = true
   ephemeral = true
 }
 
 variable "hcp_client_secret" {
   type      = string
+  default   = ""
   sensitive = true
   ephemeral = true
 }

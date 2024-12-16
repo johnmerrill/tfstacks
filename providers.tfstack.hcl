@@ -26,9 +26,9 @@ provider "random" "this" {}
 
 provider "boundary" "this" {
   config {
-    addr                   = var.boundary_addr
-    auth_method_login_name = var.boundary_auth_method_login_name
-    auth_method_password   = var.boundary_auth_method_password
+    addr                   = component.hcp_boundary.boundary_cluster_url
+    auth_method_login_name = component.hcp_boundary.boundary_cluster_username
+    auth_method_password   = component.hcp_boundary.boundary_cluster_password
     # auth_method_id         = var.boundary_password_auth_method_id # TODO source this from secrets manager
   }
 }

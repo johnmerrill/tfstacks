@@ -1,9 +1,3 @@
-locals {
-  boundary_addr             = component.hcp_boundary.boundary_cluster_url
-  boundary_cluster_username = component.hcp_boundary.boundary_cluster_username
-  boundary_cluster_password = component.hcp_boundary.boundary_cluster_password
-}
-
 store "varset" "hcp" {
   id       = "varset-zbj89TPNiALdGJE9"
   category = "terraform"
@@ -17,13 +11,7 @@ deployment "hcp-boundary" {
   }
 }
 
-deployment "boundary" {
-  inputs = {
-    boundary_addr                   = local.boundary_addr
-    boundary_auth_method_login_name = local.boundary_cluster_username
-    boundary_auth_method_password   = local.boundary_cluster_password
-  }
-}
+deployment "boundary" {}
 
 orchestrate "auto_approve" "hcp-boundary" {
   check {
