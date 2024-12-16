@@ -12,13 +12,13 @@ variable "username" {
 }
 
 variable "hcp_client_id" {
-  type = string
-  # sensitive = true
-  # ephemeral = true
+  type      = string
+  sensitive = true
+  ephemeral = true
 }
 
 variable "hcp_client_secret" {
-  type = string
-  #   sensitive = true
-  #   ephemeral = true
+  type      = string
+  sensitive = true
+  ephemeral = true
 }
