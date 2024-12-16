@@ -1,4 +1,3 @@
-# variable "prefix" {
-#   type    = string
-#   default = ""
-# }
+variable "hcp_project_id" {
+  type = string
+}

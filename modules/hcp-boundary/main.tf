@@ -9,11 +9,15 @@
 #     upgrade_type = "SCHEDULED"
 #   }
 # }
-#
+
+resource "random_password" "name" {
+  length = 16
+}
+
 resource "hcp_boundary_cluster" "this" {
   cluster_id = "boundary"
   tier       = "Standard"
-  password   = var.password
+  password   = random_password.name.result
   username   = var.username
   project_id = var.hcp_project_id
 }

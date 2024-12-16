@@ -3,10 +3,6 @@ variable "username" {
   default = "admin"
 }
 
-variable "password" {
-  type = string
-}
-
 variable "hcp_project_id" {
   type = string
 }

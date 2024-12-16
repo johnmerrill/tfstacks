@@ -1,19 +1,11 @@
-# component "random_id" {
-#   source = "./modules/id"
+component "hcp_boundary" {
+  source = "./modules/hcp_boundary"
 
-#   providers = {
-#     random = provider.random.this
-#   }
+  providers = {
+    hcp = provider.hcp.this
+  }
 
-#   inputs = {
-#     prefix = component.random_pet.name
-#   }
-# }
-
-# component "random_pet" {
-#   source = "./modules/pet"
-
-#   providers = {
-#     random = provider.random.this
-#   }
-# }
+  inputs = {
+    hcp_project_id = var.hcp_project_id
+  }
+}
