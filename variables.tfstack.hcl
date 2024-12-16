@@ -1,3 +1,7 @@
+variable "environment" {
+  type = string
+}
+
 variable "hcp_project_id" {
   type = string
 }
