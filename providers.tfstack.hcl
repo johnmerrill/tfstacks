@@ -1,7 +1,8 @@
-# required_providers {
-#   random = {
-#     source  = "hashicorp/random"
-#     version = "~> 3.6"
-#   }
-# }
-# provider "random" "this" {}
+required_providers {
+  hcp = {
+    source  = "hashicorp/hcp"
+    version = "~> 0.100"
+  }
+}
+
+provider "hcp" {}
