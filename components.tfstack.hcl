@@ -2,7 +2,7 @@ component "hcp_boundary" {
   source = "./modules/hcp-boundary"
 
   providers = {
-    hcp = provider.hcp.this
+    hcp    = provider.hcp.this
     random = provider.random.this
   }
 
