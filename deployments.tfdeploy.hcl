@@ -11,6 +11,14 @@ deployment "hcp-boundary" {
   }
 }
 
+deployment "boundary" {
+  inputs = {
+    boundary_addr          = component.hcp_boundary.boundary_cluster_url
+    auth_method_login_name = component.hcp_boundary.boundary_cluster_username
+    auth_method_password   = component.hcp_boundary.boundary_cluster_password
+  }
+}
+
 orchestrate "auto_approve" "hcp-boundary" {
   check {
     condition = context.plan.applyable == true

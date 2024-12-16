@@ -10,3 +10,11 @@ component "hcp_boundary" {
     hcp_project_id = var.hcp_project_id
   }
 }
+
+component "boundary" {
+  source = "./modules/boundary"
+
+  providers = {
+    boundary = provider.boundary.this
+  }
+}
