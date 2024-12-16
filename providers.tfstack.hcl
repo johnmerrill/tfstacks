@@ -22,8 +22,6 @@ provider "hcp" "this" {
   }
 }
 
-provider "random" "this" {}
-
 provider "boundary" "this" {
   config {
     addr                   = component.hcp_boundary.boundary_cluster_url
@@ -32,3 +30,5 @@ provider "boundary" "this" {
     # auth_method_id         = var.boundary_password_auth_method_id # TODO source this from secrets manager
   }
 }
+
+provider "random" "this" {}
