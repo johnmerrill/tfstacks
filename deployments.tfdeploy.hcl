@@ -11,7 +11,12 @@ deployment "hcp-boundary" {
   }
 }
 
-deployment "boundary" {}
+deployment "boundary" {
+  inputs = {
+    hcp_client_id     = store.varset.hcp.client_id
+    hcp_client_secret = store.varset.hcp.client_secret
+  }
+}
 
 orchestrate "auto_approve" "hcp-boundary" {
   check {
