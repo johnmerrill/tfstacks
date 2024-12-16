@@ -31,6 +31,7 @@ provider "boundary" "this" {
   config {
     addr = component.hcp_boundary.boundary_cluster_url
     auth_method_login_name = component.hcp_boundary.boundary_cluster_username
+    auth_method_password = component.hcp_boundary.boundary_cluster_password
   }
 }
 
