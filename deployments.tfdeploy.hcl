@@ -3,7 +3,7 @@ store "varset" "hcp" {
   category = "terraform"
 }
 
-deployment "hcp-boundary" {
+deployment "boundary" {
   inputs = {
     hcp_client_id     = store.varset.hcp.client_id
     hcp_client_secret = store.varset.hcp.client_secret
@@ -11,14 +11,7 @@ deployment "hcp-boundary" {
   }
 }
 
-deployment "boundary" {
-  inputs = {
-    hcp_client_id     = store.varset.hcp.client_id
-    hcp_client_secret = store.varset.hcp.client_secret
-  }
-}
-
-orchestrate "auto_approve" "hcp-boundary" {
+orchestrate "auto_approve" "boundary" {
   check {
     condition = context.plan.applyable == true
     reason    = "auto apporve"
