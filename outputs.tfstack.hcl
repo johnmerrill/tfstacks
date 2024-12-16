@@ -20,11 +20,12 @@ output "boundary_cluster_username" {
   description = "Boundary cluster username"
   value       = component.hcp_boundary.boundary_cluster_username
   type        = string
+  sensitive   = true
 }
 
 output "boundary_cluster_password" {
   description = "Boundary cluster password"
   value       = component.hcp_boundary.boundary_cluster_password
   type        = string
-  sensitive   = false
+  sensitive   = true
 }
