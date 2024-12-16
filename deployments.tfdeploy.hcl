@@ -3,7 +3,7 @@ store "varset" "hcp" {
   category = "terraform"
 }
 
-deployment "boundary" {
+deployment "dev" {
   inputs = {
     hcp_client_id     = store.varset.hcp.client_id
     hcp_client_secret = store.varset.hcp.client_secret
