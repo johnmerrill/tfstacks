@@ -6,11 +6,6 @@ variable "hcp_project_id" {
   type = string
 }
 
-variable "username" {
-  type    = string
-  default = "admin"
-}
-
 variable "hcp_client_id" {
   type      = string
   sensitive = true
@@ -22,3 +17,13 @@ variable "hcp_client_secret" {
   sensitive = true
   ephemeral = true
 }
+
+
+# variable "boundary_auth_method_login_name" {
+#   type = string
+# }
+
+# variable "boundary_auth_method_password" {
+#   type      = string
+#   sensitive = true
+# }

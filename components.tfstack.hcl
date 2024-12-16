@@ -12,3 +12,11 @@ component "hcp_boundary" {
     environment    = var.environment
   }
 }
+
+component "boundary" {
+  source = "./modules/boundary"
+
+  providers = {
+    boundary = provider.boundary.this
+  }
+}
