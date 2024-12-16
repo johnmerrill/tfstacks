@@ -26,4 +26,5 @@ output "boundary_cluster_password" {
   description = "Boundary cluster password"
   value       = component.hcp_boundary.boundary_cluster_password
   type        = string
+  sensitive   = true
 }

@@ -7,5 +7,6 @@ output "boundary_cluster_username" {
 }
 
 output "boundary_cluster_password" {
-  value = hcp_boundary_cluster.this.password
+  value     = hcp_boundary_cluster.this.password
+  sensitive = true
 }
