@@ -5,4 +5,4 @@ required_providers {
   }
 }
 
-provider "hcp" {}
+provider "hcp" "this" {}
