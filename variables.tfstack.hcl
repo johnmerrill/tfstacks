@@ -1,6 +1,14 @@
+variable "environment" {
+  type = string
+}
+
 variable "hcp_project_id" {
+  type = string
+}
+
+variable "username" {
   type    = string
-  default = ""
+  default = "admin"
 }
 
 variable "hcp_client_id" {
@@ -13,21 +21,4 @@ variable "hcp_client_secret" {
   type      = string
   sensitive = true
   ephemeral = true
-}
-
-variable "boundary_addr" {
-  default = ""
-  type    = string
-}
-
-variable "boundary_auth_method_login_name" {
-  default   = ""
-  type      = string
-  sensitive = true
-}
-
-variable "boundary_auth_method_password" {
-  default   = ""
-  type      = string
-  sensitive = true
 }

@@ -9,13 +9,16 @@
 #     upgrade_type = "SCHEDULED"
 #   }
 # }
+locals {
+  hcp_cluster_name = "boundary-${var.environment}"
+}
 
 resource "random_password" "name" {
   length = 16
 }
 
 resource "hcp_boundary_cluster" "this" {
-  cluster_id = "boundary"
+  cluster_id = local.hcp_cluster_name
   tier       = "Standard"
   password   = random_password.name.result
   username   = var.username
