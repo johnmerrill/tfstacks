@@ -1,14 +1,14 @@
-deployment "dev" {
-  # inputs = {
-  #   prefix = component.random_pet.name
-  # }
-}
+# deployment "dev" {
+#   # inputs = {
+#   #   prefix = component.random_pet.name
+#   # }
+# }
 
-deployment "prod" {
-  inputs = {
-    prefix = "prod"
-  }
-}
+# deployment "prod" {
+#   inputs = {
+#     prefix = "prod"
+#   }
+# }
 
 # orchestrate "auto_approve" "dev" {
 #   check {
