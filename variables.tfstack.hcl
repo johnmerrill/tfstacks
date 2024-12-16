@@ -18,9 +18,6 @@ variable "hcp_client_secret" {
   ephemeral = true
 }
 
-# variable "boundary_addr" {
-#   type = string
-# }
 
 # variable "boundary_auth_method_login_name" {
 #   type = string
