@@ -4,17 +4,11 @@ component "hcp_boundary" {
   providers = {
     hcp    = provider.hcp.this
     random = provider.random.this
+    local  = provider.local.this
   }
 
   inputs = {
     hcp_project_id = var.hcp_project_id
-  }
-}
-
-component "boundary" {
-  source = "./modules/boundary"
-
-  providers = {
-    boundary = provider.boundary.this
+    environment    = var.environment
   }
 }
