@@ -1,5 +1,5 @@
 component "hcp_boundary" {
-  source = "./modules/hcp_boundary"
+  source = "./modules/hcp-boundary"
 
   providers = {
     hcp = provider.hcp.this
