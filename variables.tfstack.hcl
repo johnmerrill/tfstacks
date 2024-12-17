@@ -17,13 +17,3 @@ variable "hcp_client_secret" {
   sensitive = true
   ephemeral = true
 }
-
-
-# variable "boundary_auth_method_login_name" {
-#   type = string
-# }
-
-# variable "boundary_auth_method_password" {
-#   type      = string
-#   sensitive = true
-# }
