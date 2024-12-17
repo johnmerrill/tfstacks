@@ -19,4 +19,8 @@ component "boundary" {
   providers = {
     boundary = provider.boundary.this
   }
+
+  depends_on = [
+    component.hcp_boundary
+  ]
 }
