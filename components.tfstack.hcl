@@ -13,14 +13,14 @@ component "hcp_boundary" {
   }
 }
 
-component "boundary" {
-  source = "./modules/boundary"
+# component "boundary" {
+#   source = "./modules/boundary"
 
-  providers = {
-    boundary = provider.boundary.this
-  }
+#   providers = {
+#     boundary = provider.boundary.this
+#   }
 
-  depends_on = [
-    component.hcp_boundary
-  ]
-}
+#   depends_on = [
+#     component.hcp_boundary
+#   ]
+# }
