@@ -9,10 +9,10 @@ terraform {
 
 resource "null_resource" "hello_world" {
   provisioner "local-exec" {
-    command = "echo Hello, World!"
+    command = "echo Hello, World!!"
   }
 }
 
 output "hello_world_output" {
-  value = "Check the Terraform output for 'Hello, World!' after applying."
+  value = "Check the Terraform output for 'Hello, World!!' after applying."
 }
