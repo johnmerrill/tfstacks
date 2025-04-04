@@ -9,7 +9,7 @@ terraform {
 
 resource "null_resource" "hello_world" {
   provisioner "local-exec" {
-    command = "echo Hello, World!!"
+    command = "echo Hello, World!! This is a PR"
   }
 }
 
