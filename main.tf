@@ -14,5 +14,5 @@ resource "null_resource" "hello_world" {
 }
 
 output "hello_world_output" {
-  value = "Check the Terraform output for 'Hello, World!!' after applying."
+  value = "Check the Terraform output for 'Hello, World!!' after applying. PR apply"
 }
